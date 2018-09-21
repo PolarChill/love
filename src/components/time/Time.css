@@ -1,0 +1,118 @@
+/*载入字体*/
+@font-face {
+  font-family: 'Journal';
+  src: url('../../fonts/Journal.ttf.woff') format('woff'), url('../../fonts/Journal.ttf.svg#Journal') format('svg'),
+    url('../../fonts/Journal.ttf.eot'), url('../../fonts/Journal.ttf.eot?#iefix') format('embedded-opentype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+/* @font-face {
+  font-family: 'JournalRegular';
+
+  src: url('/public/fonts/journal-webfont.eot');
+  src: url('/public/fonts/journal-webfont_162a16fe.eot') format('embedded-opentype'),
+    url('/public/fonts/journal-webfont.woff') format('woff'),
+    url('/public/fonts/journal-webfont.ttf') format('truetype'), url('/public/fonts/journal-webfont.svg') format('svg');
+
+  font-weight: normal;
+  font-style: normal;
+} */
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-position {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0.3;
+  background-color: black;
+}
+
+.front {
+  border: 5px solid red;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.small-title {
+  color: gray;
+  line-height: 0.5rem;
+  font-size: 10px;
+}
+
+.modal-content {
+  border-radius: 25px;
+  width: 600px;
+  margin: 30px auto;
+  background: #040404;
+}
+.modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.time-font {
+  color: #fff;
+}
+
+.modal-header h1 {
+  margin: 0px;
+  color: #a94442;
+  font-family: 'Jellkya', Arial, sans-serif;
+  font-weight: 100;
+  font-size: 8rem;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+.modal-content {
+  opacity: 0.85;
+  background: #040404;
+}
+
+.modal-body {
+  padding: 15px;
+}
+.modal-body p {
+  margin: 0px;
+}

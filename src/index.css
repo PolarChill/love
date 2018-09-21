@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/*载入字体*/
+@font-face {
+  font-family: 'Journal';
+  src: url('./fonts/Journal.ttf.woff') format('woff'), url('./fonts/Journal.ttf.svg#Journal') format('svg'),
+    url('./fonts/Journal.ttf.eot'), url('./fonts/Journal.ttf.eot?#iefix') format('embedded-opentype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+/*载入字体*/
+@font-face {
+  font-family: 'Jellkya';
+  src: url('./fonts/Jellyka-End_less-Voyage.ttf.woff') format('woff'),
+    url('./fonts/Jellyka-End_less-Voyage.ttf.svg#Jellkya') format('svg'), url('./fonts/Jellyka-End_less-Voyage.ttf.eot'),
+    url('./fonts/Jellyka-End_less-Voyage.ttf.eot?#iefix') format('embedded-opentype');
+
+  font-weight: normal;
+  font-style: normal;
+}
