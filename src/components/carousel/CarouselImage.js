@@ -19,9 +19,13 @@ function CarouselImage(props) {
 
   return (
     <ul className="carousel-image">
-      <TransitionGroup component={component}>
-        <CSSTransition timeout={{ enter: enterDelay, exit: leaveDelay }} classNames={name} key={imageSrc[currentIndex]}>
-          <img src={imageSrc[currentIndex]} key={imageSrc[currentIndex]} />
+      <TransitionGroup className="carousel-image-item" component={component}>
+        <CSSTransition // appear
+          in={true}
+          timeout={{ enter: enterDelay, exit: leaveDelay }}
+          classNames={name} // unmountOnExit
+          key={imageSrc[currentIndex]}>
+          <img src={imageSrc[currentIndex]} />
         </CSSTransition>
       </TransitionGroup>
     </ul>

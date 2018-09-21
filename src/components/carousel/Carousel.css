@@ -9,40 +9,67 @@ li {
   position: relative;
   margin: 0 auto;
   width: 1000px;
-  height: 500px;
+  height: 550px;
 }
-.carousel-image {
-  width: 1000px;
-  height: 500px;
-  overflow: hidden;
-}
-.carousel-image-item {
+.carousel .carousel-image {
   position: relative;
   width: 1000px;
-  height: 500px;
+  height: 550px;
+  overflow: hidden;
+}
+/* .carousel .carousel-image .carousel-image-item {
+  position: absolute;
+  width: 1000px;
+  height: 550px;
+} */
+.carousel .carousel-image .carousel-image-item-enter-done {
+  position: relative;
+  width: 1000px;
+  height: 550px;
+}
+.carousel .carousel-image .carousel-image-item-enter.carousel-image-item-enter-active {
+  position: absolute;
+  width: 1000px;
+  height: 550px;
+}
+.carousel .carousel-image .carousel-image-item-exit.carousel-image-item-exit-active {
+  position: relative;
+  width: 1000px;
+  height: 550px;
+}
+/* .carousel-image-item-exit {
+  position: relative;
+  width: 1000px;
+  height: 550px;
 }
 .carousel-image-item-enter {
-  position: absolute;
+  position: relative;
+  width: 1000px;
+  height: 550px;
+} */
+.carousel-image-item-enter {
+  position: relative;
   opacity: 0.01;
 }
-.carousel-image-item-enter-active {
+
+.carousel-image-item-enter.carousel-image-item-enter-active {
   opacity: 1;
   transition: 1.5s opacity ease-in-out;
 }
 .carousel-image-item-exit {
-  position: absolute;
+  position: relative;
   opacity: 1;
 }
-.carousel-image-item-exit-active {
+.carousel-image-item-exit.carousel-image-item-exit-active {
   opacity: 0.01;
   transition: 1.5s opacity ease-in-out;
 }
-.carousel-nav {
+.carousel .carousel-nav {
   position: absolute;
   left: 10px;
   bottom: 10px;
 }
-.carousel-nav-item {
+.carousel .carousel-nav .carousel-nav-item {
   list-style: none;
   float: left;
   margin-right: 5px;
@@ -51,10 +78,10 @@ li {
   background-color: #c0c0c0;
   border-radius: 50%;
 }
-.carousel-nav-item-active {
+.carousel .carousel-nav .carousel-nav-item.carousel-nav-item-active {
   background-color: #ebebeb;
 }
-.button-group span {
+.carousel .button-group span {
   position: absolute;
   width: 40px;
   font-size: 30px;
@@ -64,12 +91,14 @@ li {
   color: #fff;
   top: 220px;
 }
-.button-group span:hover {
+.carousel .button-group span:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
-.button-left {
+.carousel .button-group .button-left {
   left: 10px;
 }
-.button-right {
+.carousel .button-group .button-right {
   right: 10px;
 }
+
+/*# sourceMappingURL=style.css.map */
