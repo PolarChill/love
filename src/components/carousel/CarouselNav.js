@@ -1,10 +1,4 @@
-import React, { PropTypes } from 'react';
-
-// const propTypes = {
-//   carouselNavItems: PropTypes.array.isRequired,
-//   currentIndex: PropTypes.number.isRequired,
-//   selectImage: PropTypes.func.isRequired
-// };
+import React from 'react';
 
 /* 底部显示组件 */
 function CarouselNav(props) {
@@ -12,7 +6,7 @@ function CarouselNav(props) {
   return (
     <ul className="carousel-nav">
       {carouselNavItems.map(function(item, i) {
-        if (i == currentIndex) {
+        if (i === currentIndex) {
           return <li className="carousel-nav-item carousel-nav-item-active" key={i} onClick={() => selectImage(i)} />;
         } else {
           return <li className="carousel-nav-item" key={i} onClick={() => selectImage(i)} />;
@@ -21,7 +15,5 @@ function CarouselNav(props) {
     </ul>
   );
 }
-
-// CarouselNav.propTypes = propTypes;
 
 export default CarouselNav;

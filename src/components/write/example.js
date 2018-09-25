@@ -1,14 +1,13 @@
-'use strict';
-
 import React from 'react';
 import InputAnimation from './InputAnimation';
 
 let centerStyle = {
   height: '100vh',
-  justifyContent: 'center',
-  alignItems: 'center',
+  // justifyContent: 'center',
+  // alignItems: 'center',
   backgroundColor: '#f7f7f7',
-  fontFamily: 'Lucida Sans Unicode'
+  fontFamily: 'Lucida Sans Unicode',
+  whiteSpace: 'pre-wrap'
 };
 
 let animatedInputStyle = {
@@ -18,21 +17,37 @@ let animatedInputStyle = {
 };
 
 export default class Example extends React.Component {
+  state = {
+    visibleOne: true,
+    visibleTwo: false
+  };
+  showVisible = () => {
+    this.setState({
+      visibleOne: false,
+      visibleTwo: true
+    });
+  };
   render() {
     return (
       <div className={'center'} style={centerStyle}>
         <span style={animatedInputStyle}>
-          <InputAnimation
-            texts={[
-              'Hello World!',
-              'This is an animated text input, made using ReactJS and ES6',
-              'Code is availabe on Github!',
-              'Enjoy :)'
-            ]}
-            deleteInterval={65}
-            interTextInterval={1250}
-            loop
-          />
+          {this.state.visibleOne && (
+            <InputAnimation
+              texts={'你好! \n\rEnjoy :)'}
+              deleteInterval={65}
+              interTextInterval={1250}
+              _isDelete={true}
+              inputCallBack={this.showVisible}
+            />
+          )}
+          {this.state.visibleTwo && (
+            <InputAnimation
+              texts={'大家好! \n\r你不知道的JavaScript\n\rEnjoy :)'}
+              deleteInterval={65}
+              inputCallBack={this.showVisible}
+            />
+          )}
+          {/* <BlinkingCursor /> */}
         </span>
       </div>
     );

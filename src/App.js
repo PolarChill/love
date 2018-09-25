@@ -11,9 +11,7 @@ class App extends Component {
         <div>
           <Example />
         </div>
-        <div>
-          <Time />
-        </div>
+        <div>{/* <Time /> */}</div>
         <div>
           <Carousel />
         </div>

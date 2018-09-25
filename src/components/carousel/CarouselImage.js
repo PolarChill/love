@@ -1,5 +1,5 @@
-import React, { PropTypes } from 'react';
-import { CSSTransition, TransitionGroup, Transition } from 'react-transition-group';
+import React from 'react';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import './Carousel.css';
 // import CSSTransitionGroup from 'react-transition-group';
 
@@ -25,7 +25,7 @@ function CarouselImage(props) {
           timeout={{ enter: enterDelay, exit: leaveDelay }}
           classNames={name} // unmountOnExit
           key={imageSrc[currentIndex]}>
-          <img src={imageSrc[currentIndex]} />
+          <img src={imageSrc[currentIndex]} alt="" />
         </CSSTransition>
       </TransitionGroup>
     </ul>
