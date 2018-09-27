@@ -1,17 +1,6 @@
 import React from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import './Carousel.css';
-// import CSSTransitionGroup from 'react-transition-group';
-
-// /* 定义参数类型 */
-// const propTypes = {
-//   imageSrc: PropTypes.array.isRequired,
-//   currentIndex: PropTypes.number.isRequired,
-//   enterDelay: PropTypes.number.isRequired,
-//   leaveDelay: PropTypes.number.isRequired,
-//   name: PropTypes.string.isRequired,
-//   component: PropTypes.string.isRequired
-// };
 
 /* 轮播图片组件 */
 function CarouselImage(props) {
@@ -31,7 +20,5 @@ function CarouselImage(props) {
     </ul>
   );
 }
-
-// CarouselImage.propTypes = propTypes;
 
 export default CarouselImage;

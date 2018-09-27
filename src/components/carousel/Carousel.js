@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 
-// import ReactDOM from 'react-dom';
-// import CSSTransitionGroup from 'react-addons-css-transition-group';
 import CarouselNav from './CarouselNav.js';
 import ButtonGroup from './ButtonGroup.js';
 import CarouselImage from './CarouselImage.js';
-// import './Carousel.css';
 
 /**
  * 轮播图组件
@@ -15,7 +12,7 @@ export default class Carousel extends Component {
     super(props);
     /* 存放图片地址及当前展示的图片索引 */
     this.state = {
-      imageSrc: ['/images/1.jpeg', '/images/2.jpeg', '/images/3.jpeg', '/images/4.jpeg', '/images/5.jpeg'],
+      imageSrc: ['/images/a.jpg', '/images/b.jpg', '/images/c.jpg', '/images/4.jpeg', '/images/5.jpeg'],
       currentIndex: 0
     };
     /* 定时器引用 */
@@ -112,12 +109,12 @@ export default class Carousel extends Component {
           component={'li'}
           name={'carousel-image-item'}
         />
-        <CarouselNav
+        {/* <CarouselNav
           carouselNavItems={this.state.imageSrc}
           currentIndex={this.state.currentIndex}
           selectImage={this.selectImage}
-        />
-        <ButtonGroup prevImage={this.prevImage} nextImage={this.nextImage} />
+        /> */}
+        {/* <ButtonGroup prevImage={this.prevImage} nextImage={this.nextImage} /> */}
       </div>
     );
   }

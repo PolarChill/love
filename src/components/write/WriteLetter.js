@@ -1,21 +1,8 @@
 import React from 'react';
 import InputAnimation from './InputAnimation';
+import './WriteLetter.css';
 
-let centerStyle = {
-  // justifyContent: 'center',
-  // alignItems: 'center',
-  // backgroundColor: '#f7f7f7',
-  fontFamily: 'Lucida Sans Unicode',
-  whiteSpace: 'pre-wrap'
-};
-
-let animatedInputStyle = {
-  color: 'grey',
-  letterSpacing: '2',
-  fontSize: '3vmin'
-};
-
-export default class Example extends React.Component {
+export default class WriteLetter extends React.Component {
   state = {
     visibleOne: true,
     visibleTwo: false
@@ -26,10 +13,13 @@ export default class Example extends React.Component {
       visibleTwo: true
     });
   };
+  excuteDone = () => {
+    this.props.done();
+  };
   render() {
     return (
-      <div className={'center'} style={centerStyle}>
-        <span style={animatedInputStyle}>
+      <div className="write-container">
+        <span className="write-content">
           {this.state.visibleOne && (
             <InputAnimation
               texts={'你好! \n\rEnjoy :)'}
@@ -43,10 +33,9 @@ export default class Example extends React.Component {
             <InputAnimation
               texts={'大家好! \n\r你不知道的JavaScript\n\rEnjoy :)'}
               deleteInterval={65}
-              inputCallBack={this.showVisible}
+              inputCallBack={this.excuteDone}
             />
           )}
-          {/* <BlinkingCursor /> */}
         </span>
       </div>
     );

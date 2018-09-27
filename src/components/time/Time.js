@@ -75,7 +75,6 @@ export default class Time extends Component {
     let { day, hour, minute, sec } = this.state;
     return (
       <div className="modal-content">
-        <div />
         <div className="modal-header">
           <h1 className="text-center">The times we together</h1>
           <p className="text-center small-title">Johnny &amp; Dawn</p>

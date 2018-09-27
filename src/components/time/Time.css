@@ -19,39 +19,6 @@
   font-style: normal;
 } */
 
-.carousel-fade .carousel-inner .item {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  -ms-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-}
-
-.carousel-fade .carousel-inner .active {
-  opacity: 1;
-}
-
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-}
-
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-
-.carousel-position {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
 .mask {
   position: absolute;
   left: 0;
@@ -89,6 +56,7 @@ p {
   border-radius: 25px;
   width: 600px;
   margin: 30px auto;
+
   background: #040404;
 }
 .modal-header {

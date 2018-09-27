@@ -8,13 +8,13 @@ li {
 .carousel {
   position: relative;
   margin: 0 auto;
-  width: 1000px;
-  height: 550px;
+  width: 100%;
+  height: auto;
 }
 .carousel .carousel-image {
   position: relative;
-  width: 1000px;
-  height: 550px;
+  width: 100%;
+  height: auto;
   overflow: hidden;
 }
 /* .carousel .carousel-image .carousel-image-item {
@@ -22,20 +22,37 @@ li {
   width: 1000px;
   height: 550px;
 } */
+.carousel .carousel-image .carousel-image-item img {
+  position: relative;
+  /* width: 100%;
+  height: 100%; */
+  object-fit: fill;
+  width: 100%;
+  height: auto;
+}
 .carousel .carousel-image .carousel-image-item-enter-done {
   position: relative;
-  width: 1000px;
-  height: 550px;
+  /* width: 100%;
+  height: 100%; */
+  object-fit: fill;
+  width: 100%;
+  height: auto;
 }
 .carousel .carousel-image .carousel-image-item-enter.carousel-image-item-enter-active {
   position: absolute;
-  width: 1000px;
-  height: 550px;
+  /* width: 100%;
+  height: 100%; */
+  object-fit: fill;
+  width: 100%;
+  height: auto;
 }
 .carousel .carousel-image .carousel-image-item-exit.carousel-image-item-exit-active {
   position: relative;
-  width: 1000px;
-  height: 550px;
+  /* width: 100%;
+  height: 100%; */
+  object-fit: fill;
+  width: 100%;
+  height: auto;
 }
 /* .carousel-image-item-exit {
   position: relative;
