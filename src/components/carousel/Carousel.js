@@ -12,7 +12,7 @@ export default class Carousel extends Component {
     super(props);
     /* 存放图片地址及当前展示的图片索引 */
     this.state = {
-      imageSrc: ['/images/a.jpg', '/images/b.jpg', '/images/c.jpg', '/images/4.jpeg', '/images/5.jpeg'],
+      imageSrc: ['/images/11.jpg', '/images/22.jpg', '/images/33.jpg', '/images/44.jpg'],
       currentIndex: 0
     };
     /* 定时器引用 */

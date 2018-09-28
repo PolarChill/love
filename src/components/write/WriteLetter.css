@@ -1,9 +1,19 @@
 .write-container {
   height: 400px;
   width: 400px;
-  white-space: 'pre-wrap';
-  margin: 0 atuo;
+
+  white-space: pre-wrap;
+  /* margin: 0 atuo; */
+  /* background-image: url('/images/bg.jpg'); */
+  /* background-size: cover; */
+  left: 43%;
+  top: 80px;
+  position: absolute;
+  color: red;
+  font-size: 40px;
+  font-weight: bold;
 }
 .write-content {
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: 60px;
 }

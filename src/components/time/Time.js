@@ -7,7 +7,8 @@ export default class Time extends Component {
   state = { day: '', hour: '', minute: '', sec: '' };
   intilData() {
     let now = dayjs();
-    let ourDate = '2017-11-15T00:09:00+08:00';
+    // let ourDate = '2017-11-15T00:09:00+08:00';
+    let ourDate = '2017-2-15T00:09:00+08:00';
     ourDate = dayjs(ourDate);
 
     console.log(now - ourDate);
@@ -77,7 +78,7 @@ export default class Time extends Component {
       <div className="modal-content">
         <div className="modal-header">
           <h1 className="text-center">The times we together</h1>
-          <p className="text-center small-title">Johnny &amp; Dawn</p>
+          <p className="text-center small-title">韩尙直 &amp; 贺畅</p>
           <p className="text-center small-title">LOVING ON THE WAY</p>
         </div>
         <div
@@ -102,7 +103,7 @@ export default class Time extends Component {
           </p>
           <p>days/hours/min/sec</p>
           <p className="text-center" style={{ color: 'rgb(169, 68, 66)', fontSize: 17, display: 'block' }} id="say">
-            厦门，软件园。原来七夕可以这么简单，一幅画，一句情话，幸福
+            You know nothing
           </p>
         </div>
         <div />
